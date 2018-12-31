@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naos.MachineManagement.Local", "Naos.MachineManagement.Local\Naos.MachineManagement.Local.csproj", "{ABC1356C-CD22-4E15-8EE9-776635CDC9B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naos.MachineManagement.WinRm", "Naos.MachineManagement.WinRm\Naos.MachineManagement.WinRm.csproj", "{F9133852-4390-4FF5-BB84-FF3969D567FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naos.MachineManagement.Ssh", "Naos.MachineManagement.Ssh\Naos.MachineManagement.Ssh.csproj", "{30B23CB9-E17B-4087-AE34-A1C1D305CDF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naos.MachineManagement.Factory", "Naos.MachineManagement.Factory\Naos.MachineManagement.Factory.csproj", "{90CD317E-BC20-452A-9ACE-8AAA219EF6D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naos.MachineManagement.Test", "Naos.MachineManagement.Test\Naos.MachineManagement.Test.csproj", "{6F0D81FF-47BC-43FC-A2DB-DF1EC0E8A735}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Naos.MachineManagement.Domain", "Naos.MachineManagement.Domain\Naos.MachineManagement.Domain.csproj", "{62528A52-E337-4E90-B0A6-71E1F0E60CF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABC1356C-CD22-4E15-8EE9-776635CDC9B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABC1356C-CD22-4E15-8EE9-776635CDC9B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABC1356C-CD22-4E15-8EE9-776635CDC9B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABC1356C-CD22-4E15-8EE9-776635CDC9B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9133852-4390-4FF5-BB84-FF3969D567FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9133852-4390-4FF5-BB84-FF3969D567FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9133852-4390-4FF5-BB84-FF3969D567FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9133852-4390-4FF5-BB84-FF3969D567FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30B23CB9-E17B-4087-AE34-A1C1D305CDF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30B23CB9-E17B-4087-AE34-A1C1D305CDF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30B23CB9-E17B-4087-AE34-A1C1D305CDF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30B23CB9-E17B-4087-AE34-A1C1D305CDF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90CD317E-BC20-452A-9ACE-8AAA219EF6D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90CD317E-BC20-452A-9ACE-8AAA219EF6D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90CD317E-BC20-452A-9ACE-8AAA219EF6D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90CD317E-BC20-452A-9ACE-8AAA219EF6D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F0D81FF-47BC-43FC-A2DB-DF1EC0E8A735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F0D81FF-47BC-43FC-A2DB-DF1EC0E8A735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F0D81FF-47BC-43FC-A2DB-DF1EC0E8A735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F0D81FF-47BC-43FC-A2DB-DF1EC0E8A735}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62528A52-E337-4E90-B0A6-71E1F0E60CF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62528A52-E337-4E90-B0A6-71E1F0E60CF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62528A52-E337-4E90-B0A6-71E1F0E60CF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62528A52-E337-4E90-B0A6-71E1F0E60CF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {413CCF38-B6F1-46FE-B377-1F3970A3799F}
+	EndGlobalSection
+EndGlobal
