@@ -32,7 +32,7 @@ namespace Naos.MachineManagement.Factory
                 case MachineProtocol.Ssh:
                     return new SshMachineManager(address, userName, password);
                 case MachineProtocol.WinRm:
-                    return new WinRmMachineManager(address, userName, password);
+                    return new WinRmMachineManager(address, userName, password, true);
                 default:
                     throw new NotSupportedException(Invariant($"{nameof(MachineProtocol)} - {machineProtocol} is not supported."));
             }

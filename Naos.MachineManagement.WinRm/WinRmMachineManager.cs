@@ -26,13 +26,14 @@ namespace Naos.MachineManagement.WinRm
         /// <param name="address">Address of machine.</param>
         /// <param name="userName">User name to connect with.</param>
         /// <param name="password">Password for provided user name.</param>
-        public WinRmMachineManager(string address, string userName, string password)
+        /// <param name="autoManageTrustedHosts">A value indicating whether or not to automatically manage trusted hosts.</param>
+        public WinRmMachineManager(string address, string userName, string password, bool autoManageTrustedHosts)
         {
             new { address }.Must().NotBeNullNorWhiteSpace();
 
             this.Address = address;
 
-            this.machineManager = new MachineManager(this.Address, userName, password.ToSecureString());
+            this.machineManager = new MachineManager(this.Address, userName, password.ToSecureString(), autoManageTrustedHosts);
         }
 
         /// <inheritdoc />
