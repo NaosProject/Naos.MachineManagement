@@ -50,7 +50,7 @@ namespace Naos.MachineManagement.Local
         /// <inheritdoc />
         public void SendFile(string filePathOnTargetMachine, byte[] fileContents, bool appended = false, bool overwrite = false)
         {
-            if (!appended && !overwrite)
+            if (!appended && overwrite)
             {
                 File.WriteAllBytes(filePathOnTargetMachine, fileContents);
             }
