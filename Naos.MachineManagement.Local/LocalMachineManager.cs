@@ -11,6 +11,8 @@ namespace Naos.MachineManagement.Local
     using System.IO;
     using Naos.MachineManagement.Domain;
     using Naos.Recipes.WinRM;
+
+    using static System.FormattableString;
     using IManageMachines = Naos.MachineManagement.Domain.IManageMachines;
 
     /// <summary>
@@ -52,6 +54,12 @@ namespace Naos.MachineManagement.Local
         {
             if (!appended && overwrite)
             {
+                var directory = Path.GetDirectoryName(filePathOnTargetMachine) ?? throw new ArgumentException(Invariant($"Could not get directory from {filePathOnTargetMachine}."));
+                if (!Directory.Exists(directory))
+                {
+                    Directory.CreateDirectory(directory);
+                }
+
                 File.WriteAllBytes(filePathOnTargetMachine, fileContents);
             }
             else
