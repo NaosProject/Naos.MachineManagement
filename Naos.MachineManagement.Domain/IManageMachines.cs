@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="IManageMachines.cs" company="Naos">
-//    Copyright (c) Naos 2017. All Rights Reserved.
+// <copyright file="IManageMachines.cs" company="Naos Project">
+//    Copyright (c) Naos Project 2019. All rights reserved.
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
@@ -15,12 +15,12 @@ namespace Naos.MachineManagement.Domain
     public interface IManageMachines : IDisposable
     {
         /// <summary>
-        /// Address of the machine.
+        /// Gets the address of the machine.
         /// </summary>
         string Address { get; }
 
         /// <summary>
-        /// Protocol of the machine.
+        /// Gets the protocol of the machine.
         /// </summary>
         MachineProtocol MachineProtocol { get; }
 
@@ -45,7 +45,7 @@ namespace Naos.MachineManagement.Domain
         /// <param name="filePathOnTargetMachine">File path to fetch the contents of on the remote machine.</param>
         /// <returns>Bytes of the specified files (throws if missing).</returns>
         byte[] RetrieveFile(string filePathOnTargetMachine);
-        
+
         /// <summary>
         /// Runs an arbitrary script block.
         /// </summary>

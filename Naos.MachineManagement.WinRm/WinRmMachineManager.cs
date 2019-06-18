@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="WinRmMachineManager.cs" company="Naos">
-//    Copyright (c) Naos 2017. All Rights Reserved.
+// <copyright file="WinRmMachineManager.cs" company="Naos Project">
+//    Copyright (c) Naos Project 2019. All rights reserved.
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
@@ -14,7 +14,7 @@ namespace Naos.MachineManagement.WinRm
     using IManageMachines = Naos.MachineManagement.Domain.IManageMachines;
 
     /// <summary>
-    /// Microsoft WinRm protocol implementation of <see cref="IManageMachines" />
+    /// Microsoft WinRm protocol implementation of <see cref="IManageMachines" />.
     /// </summary>
     public sealed class WinRmMachineManager : IManageMachines
     {
