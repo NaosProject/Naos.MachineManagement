@@ -9,7 +9,7 @@ namespace Naos.MachineManagement.WinRm
     using System.Collections.Generic;
     using Naos.MachineManagement.Domain;
     using Naos.Recipes.WinRM;
-    using OBeautifulCode.Validation.Recipes;
+    using OBeautifulCode.Assertion.Recipes;
 
     using IManageMachines = Naos.MachineManagement.Domain.IManageMachines;
 
@@ -29,7 +29,7 @@ namespace Naos.MachineManagement.WinRm
         /// <param name="autoManageTrustedHosts">A value indicating whether or not to automatically manage trusted hosts.</param>
         public WinRmMachineManager(string address, string userName, string password, bool autoManageTrustedHosts)
         {
-            new { address }.Must().NotBeNullNorWhiteSpace();
+            new { address }.AsArg().Must().NotBeNullNorWhiteSpace();
 
             this.Address = address;
 

@@ -11,7 +11,7 @@ namespace Naos.MachineManagement.Factory
     using Naos.MachineManagement.Local;
     using Naos.MachineManagement.Ssh;
     using Naos.MachineManagement.WinRm;
-    using OBeautifulCode.Validation.Recipes;
+    using OBeautifulCode.Assertion.Recipes;
 
     using static System.FormattableString;
 
@@ -23,7 +23,7 @@ namespace Naos.MachineManagement.Factory
         /// <inheritdoc />
         public IManageMachines CreateMachineManager(MachineProtocol machineProtocol, string address, string userName, string password)
         {
-            new { machineProtocol }.Must().NotBeEqualTo(MachineProtocol.Invalid);
+            new { machineProtocol }.AsArg().Must().NotBeEqualTo(MachineProtocol.Invalid);
 
             switch (machineProtocol)
             {

@@ -9,7 +9,7 @@ namespace Naos.MachineManagement.Ssh
     using System;
     using System.Collections.Generic;
     using Naos.MachineManagement.Domain;
-    using OBeautifulCode.Validation.Recipes;
+    using OBeautifulCode.Assertion.Recipes;
     using Renci.SshNet;
 
     /// <summary>
@@ -27,7 +27,7 @@ namespace Naos.MachineManagement.Ssh
         /// <param name="password">Password for provided user name.</param>
         public SshMachineManager(string address, string userName, string password)
         {
-            new { address }.Must().NotBeNullNorWhiteSpace();
+            new { address }.AsArg().Must().NotBeNullNorWhiteSpace();
 
             this.Address = address;
 
