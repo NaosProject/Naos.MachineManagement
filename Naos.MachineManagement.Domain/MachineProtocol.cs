@@ -38,5 +38,10 @@ namespace Naos.MachineManagement.Domain
         /// </summary>
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "Ssh", Justification = "Name/spelling is correct.")]
         Ssh,
+
+        /// <summary>
+        /// Some proprietary protocol.
+        /// </summary>
+        Proprietary,
     }
 }
